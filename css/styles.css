@@ -39,7 +39,6 @@ h3 {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    /* outline: 1px solid red; */
 }
 
 .section {
@@ -53,7 +52,7 @@ h3 {
     border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+.container--flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,9 +63,8 @@ h3 {
 }
 
 .logo {
-    display: block;
+    display: inline-block;
     font-family: Raleway;
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.192;
@@ -75,13 +73,13 @@ h3 {
     text-decoration: none;
 }
 
-.header .logo {
+.navigation__logo {
     padding-top: 24px;
     padding-bottom: 24px;
     margin-right: 93px;
 }
 
-.header .studio {
+.logo__text {
     color: var(--studio-text-color);
 }
 
@@ -89,7 +87,11 @@ h3 {
     display: flex;
 }
 
-.site-nav-item .link {
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav__link {
     position: relative;
     display: block;
     font-weight: 500;
@@ -103,7 +105,16 @@ h3 {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav-item .current::after {
+.site-nav__link:hover,
+.site-nav__link:focus {
+    color: var(--focus-color);
+}
+
+.site-nav__link--current {
+    color: var(--focus-color);
+}
+
+.site-nav__link--current::after {
     content: '';
     position: absolute;
     left: 0;
@@ -115,29 +126,15 @@ h3 {
     background-color: var(--focus-color);
 }
 
-.site-nav-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.site-nav-item .current {
-    color: var(--focus-color);
-}
-
-.site-nav-item .link:hover,
-.site-nav-item .link:focus {
-    color: var(--focus-color);
-}
-
 .contacts {
     display: flex;
-    /* align-items: center; */
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.contacts-item .link {
+.contacts__link {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -152,13 +149,14 @@ h3 {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-item .link:hover,
-.contacts-item .link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: var(--focus-color);
     fill: currentColor;
 }
 
-.contacts-item svg {
+.contacts__icon {
+    display: block;
     margin-right: 10px;
 }
 /* стили для header */
@@ -177,7 +175,6 @@ h3 {
 }
 
 .footer .logo {
-    display: inline-block;
     margin-bottom: 20px;
 }
 
