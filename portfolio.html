@@ -256,62 +256,77 @@
         </main>
 
         <footer class="footer">
-            <div class="container">
+            <div class="container container--flex container--flex--baseline">
                 <div class="address-container">
-                    <a href="/" class="logo">Web<span class="studio">Studio</span></a>
+                    <a href="/" class="logo footer__logo"
+                        >Web<span class="logo__text logo__text--light">Studio</span></a
+                    >
                     <address class="address">
                         <ul class="address-list">
-                            <li class="address-list-item">
-                                <a href="#" class="map">г. Киев, пр-т Леси Украинки, 26</a>
+                            <li class="address-list__item">
+                                <a
+                                    href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                                    target="_blank"
+                                    class="address-list__link address-list__link--light"
+                                    >г. Киев, пр-т Леси Украинки, 26</a
+                                >
                             </li>
-                            <li class="address-list-item">
-                                <a href="mailto:info@example.com" class="link">info@example.com</a>
+                            <li class="address-list__item">
+                                <a href="mailto:info@example.com" class="address-list__link link"
+                                    >info@example.com</a
+                                >
                             </li>
-                            <li class="address-list-item">
-                                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                            <li class="address-list__item">
+                                <a href="tel:+380961111111" class="address-list__link link"
+                                    >+38 096 111 11 11</a
+                                >
                             </li>
                         </ul>
                     </address>
                 </div>
                 <div class="social-list-container">
-                    <b class="social-list-title">присоединяйтесь</b>
+                    <b class="invocation">присоединяйтесь</b>
                     <ul class="icons-list">
-                        <li class="icons-list-item">
+                        <li class="icons-list__item">
                             <a
                                 href="https://www.instagram.com"
                                 target="_blank"
-                                class="footer-soc-link"
+                                class="icons-list__link icons-list__link--color"
                             >
-                                <svg width="20" height="20">
+                                <svg width="20" height="20" class="icons-list__icon">
                                     <use href="./images/icons/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="icons-list-item footer-icon">
-                            <a href="https://twitter.com" target="_blank" class="footer-soc-link">
-                                <svg width="20" height="20">
+                        <li class="icons-list__item">
+                            <a
+                                href="https://twitter.com"
+                                target="_blank"
+                                class="icons-list__link icons-list__link--color"
+                            >
+                                <svg width="20" height="20" class="icons-list__icon">
                                     <use href="./images/icons/sprite.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="icons-list-item">
+                        <li class="icons-list__item">
                             <a
                                 href="https://www.facebook.com"
                                 target="_blank"
-                                class="footer-soc-link"
+                                class="icons-list__link icons-list__link--color"
                             >
-                                <svg width="20" height="20">
+                                <svg width="20" height="20" class="icons-list__icon">
                                     <use href="./images/icons/sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="icons-list-item">
+                        <li class="icons-list__item">
                             <a
                                 href="https://www.linkedin.com"
                                 target="_blank"
-                                class="footer-soc-link"
+                                class="icons-list__link icons-list__link--color"
                             >
-                                <svg width="20" height="20">
+                                <svg width="20" height="20" class="icons-list__icon">
                                     <use href="./images/icons/sprite.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
@@ -319,18 +334,18 @@
                     </ul>
                 </div>
                 <div class="mailing-container">
-                    <b class="mailing-form-title">Подпишитесь на рассылку</b>
+                    <b class="invocation">Подпишитесь на рассылку</b>
                     <form class="mailing-form" autocomplete="off">
                         <input
-                            class="mailing-form-input"
+                            class="mailing-form__input"
                             type="email"
                             name="email"
                             placeholder="E-mail"
                             required
                         />
-                        <button class="mailing-form-btn" type="submit">
+                        <button class="button mailing-form__button" type="submit">
                             Подписаться
-                            <svg width="24" height="24">
+                            <svg width="24" height="24" class="button__icon">
                                 <use href="./images/icons/sprite.svg#icon-send"></use>
                             </svg>
                         </button>
