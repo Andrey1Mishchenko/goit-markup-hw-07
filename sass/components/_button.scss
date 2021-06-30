@@ -16,3 +16,9 @@
 .button:focus {
     background: #188ce8;
 }
+
+.button__icon {
+    display: block;
+    margin-left: 10px;
+    fill: var(--third-color);
+}
