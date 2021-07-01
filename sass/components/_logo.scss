@@ -12,4 +12,8 @@
 
 .logo__text {
     color: var(--studio-text-color);
+
+    &--light {
+        color: var(--third-color);
+    }
 }

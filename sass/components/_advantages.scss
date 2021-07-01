@@ -4,10 +4,10 @@
 
 .advantages-list__item {
     flex-basis: calc((100% - 90px) / 4);
-}
 
-.advantages-list__item:not(:nth-child(4n)) {
-    margin-right: 30px;
+    &:not(:nth-child(4n)) {
+        margin-right: 30px;
+    }
 }
 
 .advantages-list__wrapper {
